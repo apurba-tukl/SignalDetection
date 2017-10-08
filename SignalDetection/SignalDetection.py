@@ -46,11 +46,11 @@ import glob
 def get_class(img_path):
     return int(img_path.split('\\')[-2])
 
-root_dir = 'G:\\Machine Learning\\Deep Learning\\Projects\\GTSRB\\Final_Training\\Images\\'
+root_dir = 'GTSRB\Final_Training\Images\'
 imgs = []
 labels = []
 
-all_img_paths = glob.glob(os.path.join(root_dir, '*\\*.ppm'))
+all_img_paths = glob.glob(os.path.join(root_dir, '*\*.ppm'))
 np.random.shuffle(all_img_paths)
 
 print (len(all_img_paths))
